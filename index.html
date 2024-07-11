@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серожка ремонт</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+   
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/images/dad.jpg" alt="Логотип" class="logo">
+            <h1>Серожка ремонт</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="nav-tabs">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#shop">Магазин</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home" class="content">
+            <h2>Добро пожаловать на наш сайт!</h2>
+            <p>Здесь будет основная информация.</p>
+            <img src="/images/dad.jpg" width=800px height=500px alt="Пример изображения" class="content-image">
+        </section>
+        
+        <section id="shop" class="content" style="display: none;">
+            <h2>Магазин</h2>
+            <div class="product-card">
+                <img src="/images/dad.jpg" alt="Лампочка" class="product-image">
+                <h3>Светодиодная лампочка</h3>
+                <p>Цена: 200 руб.</p>
+            </div>
+            <div class="product-card">
+                <img src="socket.jpg" alt="Розетка" class="product-image">
+                <h3>Электрическая розетка</h3>
+                <p>Цена: 150 руб.</p>
+            </div>
+            <div class="product-card">
+                <img src="extension-cord.jpg" alt="Удлинитель" class="product-image">
+                <h3>Удлинитель</h3>
+                <p>Цена: 300 руб.</p>
+            </div>
+        </section>
+
+        <section id="about" class="content" style="display: none;">
+            <h2>О нас</h2>
+            <p>Информация о вашей компании.</p>
+        </section>
+
+        <section id="services" class="content" style="display: none;">
+            <h2>Услуги</h2>
+            <p>Описание предоставляемых услуг.</p>
+        </section>
+
+        <section id="contact" class="content" style="display: none;">
+            <h2>Контакты</h2>
+            <p>Контактная информация.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <section class="map">
+            <h2>Карта</h2>
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f8a734228bee48d840314b0b77ab3fab259f1e65a947f0f41a87de68d20fb3a&amp;width=800&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
