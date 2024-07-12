@@ -1,39 +1,111 @@
 /* styles.css */
+:root {
+    --max-container-size: 1000px; /* Объявляем переменную --button-size и задаем ей значение 100px */
+}
+
+.header {
+    background-color: #ffffff; /* Цвет фона заголовка */
+    text-align: center; /* Центрирование текста */
+}
+
+/* 1 глава */
+.max-container {
+    border-bottom: 1px solid #55555525;  
+}
+
+.container {
+    padding: 7px 0; /* Внутренние отступы */
+    margin: 7px 0; /* Внутренние отступы */
+    display: flex;
+    justify-content: space-between; /* Распределение элементов по ширине */
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+    max-width: var(--max-container-size); /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера на странице */
+}
+
+.header-item {
+    display: flex;
+    align-items: center; /* Выравнивание элементов внутри блока */
+}
+
+.header-icon {
+    margin-right: 5px; /* Отступ между иконкой и текстом */
+}
+
+.header-text {
+    font-size: 14px; /* Размер текста */
+}
+
+.header-text strong {
+    font-weight: bold; /* Жирный шрифт для номера телефона */
+}
+
+.callback-button,
+.login-button {
+    background-color: #ffffff; /* Цвет фона кнопок */
+    border: none; /* Убираем границу кнопок */
+    padding: 8px 16px; /* Внутренние отступы кнопок */
+    margin-left: 10px; /* Отступ слева для кнопок */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопки */
+}
+
+.callback-button:hover,
+.login-button:hover {
+    color: #a8a8a8; /* Цвет фона кнопок при наведении */
+}
+
+/* 1 глава */
+
+/* 2 глава */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    height: 40px; /* Высота поля ввода */
+    width: 100%; /* Заполнение всего доступного пространства в контейнере */
+    font-size: 16px; /* Размер шрифта */
+    box-sizing: border-box; /* Включение паддинга в общую ширину элемента */
+}
+
+.search-button {
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc;
+    border-left: 0;
+    background-color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    height: 40px; /* Высота кнопки */
+    width: 40px; /* Ширина кнопки */
+    font-size: 16px; /* Размер шрифта */
+    box-sizing: border-box; /* Включение паддинга в общую ширину элемента */
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.header-text-two {
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* 2 глава */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #4CAF50;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    height: 50px;
-    margin-right: 20px;
-}
-
 nav {
     background-color: #333;
     width: 100%;
     transition: top 0.3s;
-}
-
-nav.fixed-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
 }
 
 .nav-tabs {
