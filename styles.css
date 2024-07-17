@@ -44,6 +44,19 @@ body {
     margin: 0 auto;
 }
 
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Пример цвета фона, замените на ваш */
+    z-index: 1000; /* При необходимости установите z-index, чтобы элемент был выше остального контента */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Пример тени, замените по вашему усмотрению */
+}
+
+
+
+
 .header-item {
     display: flex;
     align-items: center; 
@@ -136,12 +149,6 @@ nav {
     transition: top 0.3s;
 }
 
-nav.fixed-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
 
 .nav-tabs {
     list-style-type: none;
