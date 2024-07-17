@@ -1,62 +1,97 @@
 /* styles.css */
 :root {
-    --max-container-size: 1000px; /* Объявляем переменную --button-size и задаем ей значение 100px */
+    --max-container-size: 1200px; 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.eot') format('eot');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-    background-color: #ffffff; /* Цвет фона заголовка */
-    text-align: center; /* Центрирование текста */
+    background-color: #ffffff;
 }
 
-/* 1 глава */
+
 .max-container {
-    border-bottom: 1px solid #55555525;  
+    max-width: var(--max-container-size);
+    
 }
 
-.container {
-    padding: 7px 0; /* Внутренние отступы */
-    margin: 7px 0; /* Внутренние отступы */
+.header-container-one {
+    padding: 7px 0; 
+    margin: 7px 0; 
     display: flex;
-    justify-content: space-between; /* Распределение элементов по ширине */
-    align-items: center; /* Выравнивание элементов по центру по вертикали */
-    max-width: var(--max-container-size); /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрирование контейнера на странице */
+    justify-content: space-between; 
+    align-items: center;  
+    margin: 0 auto;
+}
+
+.header-container-two {
+    padding: 7px 0; 
+    margin: 7px 0; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+    margin: 0 auto;
 }
 
 .header-item {
     display: flex;
-    align-items: center; /* Выравнивание элементов внутри блока */
+    align-items: center; 
 }
 
 .header-icon {
-    margin-right: 5px; /* Отступ между иконкой и текстом */
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    margin-right: 5px; 
+}
+
+.header-logo {
+    width: 75px;
+    height: 48px;
 }
 
 .header-text {
-    font-size: 14px; /* Размер текста */
+    font-size: 14px;
+    color: #777;
 }
 
-.header-text strong {
-    font-weight: bold; /* Жирный шрифт для номера телефона */
+.header-text-strong {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.headers-line{
+    border-bottom: 1px solid #55555525; ;
 }
 
 .callback-button,
 .login-button {
-    background-color: #ffffff; /* Цвет фона кнопок */
-    border: none; /* Убираем границу кнопок */
-    padding: 8px 16px; /* Внутренние отступы кнопок */
-    margin-left: 10px; /* Отступ слева для кнопок */
-    cursor: pointer; /* Изменяем курсор при наведении на кнопки */
+    background-color: #ffffff; 
+    border: none; 
+    padding: 8px 16px; 
+    margin-left: 10px; 
+    cursor: pointer; 
 }
 
 .callback-button:hover,
 .login-button:hover {
-    color: #a8a8a8; /* Цвет фона кнопок при наведении */
+    color: #a8a8a8;
 }
 
-/* 1 глава */
 
-/* 2 глава */
 .search-container {
     display: flex;
     align-items: center;
@@ -65,9 +100,10 @@
 .search-input {
     padding: 10px; /* Внутренние отступы */
     border: 1px solid #ccc;
+    border-right: 0;
     border-radius: 4px 0 0 4px;
     height: 40px; /* Высота поля ввода */
-    width: 100%; /* Заполнение всего доступного пространства в контейнере */
+    width: 500px; /* Заполнение всего доступного пространства в контейнере */
     font-size: 16px; /* Размер шрифта */
     box-sizing: border-box; /* Включение паддинга в общую ширину элемента */
 }
@@ -94,16 +130,11 @@
     font-size: 14px;
     cursor: pointer;
 }
-/* 2 глава */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 nav {
-    background-color: #333;
+    background-color: #5c5c5c;
     width: 100%;
     transition: top 0.3s;
 }
@@ -116,14 +147,12 @@ nav {
     justify-content: center;
 }
 
-.nav-tabs li {
-    margin: 0 15px;
-}
-
 .nav-tabs a {
     color: white;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 14px 40px;
     display: block;
 }
 
@@ -146,7 +175,7 @@ main {
 }
 
 footer {
-    background-color: #f1f1f1;
+    background-color: #5c5c5c; /*#f1f1f1*/
     padding: 20px;
     text-align: center;
 }

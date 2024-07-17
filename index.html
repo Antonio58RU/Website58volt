@@ -3,83 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Серожка ремонт</title>
-    <meta name="description" content="Серожка ремонт - профессиональные услуги по ремонту и продаже электрооборудования. Светодиодные лампочки, розетки, удлинители и многое другое.">
+    <title>58VOLT</title>
+    <meta name="description" content="58VOLT - профессиональные услуги по ремонту и продаже электрооборудования. Светодиодные лампочки, розетки, удлинители и многое другое.">
     <meta name="keywords" content="ремонт, услуги, светодиодные лампочки, розетки, удлинители, электрооборудование, магазин, Серожка ремонт">
-    <meta name="author" content="Серожка ремонт">
+    <meta name="author" content="58VOLT">
     <link rel="icon" href="images/icon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <div class = "max-container">
-            <div class="container">
+        <div class = "headers-line">
+            <div class="max-container header-container-one">
                 <div class="header-item">
-                    <span class="header-icon">🏙️</span>
+                    <img src="images/dom.png" class = "header-icon">
                     <span class="header-text">Пенза</span>
                 </div>
                 <div class="header-item">
-                    <span class="header-icon">📞</span>
-                    <span class="header-text"><strong>+7 (900) 468-76-95</strong></span>
-                    <button class="callback-button">Заказать звонок</button>
+                    <img src="images/telef.png" class = "header-icon">
+                    <span class="header-text-strong">+7 (900) 468-76-95</span>
+                    <button class="callback-button header-text">заказать звонок</button>
                 </div>
                 <div class="header-item">
-                    <span class="header-icon">📍</span>
+                    <img src="images/adres.png" class = "header-icon">
                     <span class="header-text">г.Пенза, ул.Генерала Глазунова, 6, подъезд 2</span>
                 </div>
                 <div class="header-item">
-                    <span class="header-icon">🔒</span>
-                    <button class="login-button"><span>Войти</span></button>
+                    <img src="images/user.png" class = "header-icon">
+                    <button class="login-button header-text">Войти</button>
                 </div>
             </div>
         </div>
-        <div">
-            <div class="container">
-                <div class="header-item">
-                    <a href="http://127.0.0.1:5500/">
-                        <img src="images/icon.png" height="32px" width="32px">
-                    </a>
-                </div>
-                <div class="header-item">
-                    <span class="header-text">РЕЖИМ РАБОТЫ<br>Сб - Вс 09:00-19:00</span>
-                </div>
-                <div class="header-item search-container">
-                    <input type="text" placeholder="Поиск..." class="search-input">
-                    <button class="search-button">🔍</button>
-                </div>
-                <div class="header-item">
-                    <a href="" class="no-underline">
-                        <span class="header-icon">❤️</span>
-                        <span class="header-text-two">5</span>
-                    </a>
-                </div>
-                <div class="header-item">
-                    <a href="#" class="no-underline">
-                        <span class="header-icon"></span>🛒</span>
-                        <span class="header-text-two">2</span>
-                    </a>
-                </div>
+
+
+        <div class="max-container header-container-two ">
+            <div class="header-item">
+                <a href="http://127.0.0.1:5500/">
+                    <img src="images/icon.png" class="header-logo">
+                </a>
+            </div>
+            <div class="header-item">
+                <span class="header-text">РЕЖИМ РАБОТЫ<br>Сб - Вс 09:00-19:00</span>
+            </div>
+            <div class="header-item search-container">
+                <input type="text" placeholder="Поиск..." class="search-input">
+                <button class="search-button"><img src="images/loopa.png" class = "header-icon"></button>
+            </div>
+            <div class="header-item">
+                <img src="images/cerd.png" class = "header-icon">
+                <span class="header-text-two">5</span>
+            </div>
+            <div class="header-item">
+                <img src="images/korz.png" class = "header-icon">
+                <span class="header-text-two">2</span>
             </div>
         </div>
+   
+
+        <nav>
+            <ul class="nav-tabs">
+                <li><a href="#home"><b>Главная</b></a></li>
+                <li><a href="#shop">Магазин</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#abaut-us">О нас</a></li>
+            </ul>
+        </nav>
     </header>
     
     
-    <nav>
-        <ul class="nav-tabs">
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#shop">Магазин</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#contact">Контакты</a></li>
-            <li><a href="#abaut-us">О нас</a></li>
-        </ul>
-    </nav>
+    
     
     <main>
         <section id="home" class="content">
             <h2>Добро пожаловать на наш сайт!</h2>
             <p>Здесь будет основная информация.</p>
             <img src="images/dad.jpg" width=800px height=500px alt="Пример изображения" class="content-image">
+       
+            <div class="map">
+                <h2>Адреса магазинов</h2>
+                <div class="map-container">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f8a734228bee48d840314b0b77ab3fab259f1e65a947f0f41a87de68d20fb3a&amp;width=800&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+
         </section>
         
         <section id="shop" class="content" style="display: none;">
@@ -115,15 +122,13 @@
             <h2>Контакты</h2>
             <p>Контактная информация.</p>
         </section>
+
     </main>
     
     <footer>
-        <section class="map">
-            <h2>Карта</h2>
-            <div class="map-container">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f8a734228bee48d840314b0b77ab3fab259f1e65a947f0f41a87de68d20fb3a&amp;width=800&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
-        </section>
+        <div class="line"></div>
+        2024 © 58VOLT.RU 
+          </svg>
     </footer>
 </body>
 </html>
