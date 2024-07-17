@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll('.content');
     const navLinks = document.querySelectorAll('.nav-tabs a');
-    const header = document.querySelector('.sticky-header');
+    const header = document.getElementById('sticky');
     const headerOffset = header.offsetTop;
 
 
